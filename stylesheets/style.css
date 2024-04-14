@@ -18,27 +18,54 @@ html {
   max-width: 111rem;
 }
 
+.overflowYHidden {
+  overflow-y: hidden;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   margin: 7.5rem auto;
+  position: relative;
 }
-header #header__dropdown {
+header nav {
+  position: relative;
+  height: 1.7rem;
+  width: 4rem;
+}
+header nav .header__hamburger {
   display: none;
 }
-header ul {
+header nav ul {
   display: flex;
   justify-content: space-between;
   min-width: 43.1rem;
 }
-header ul a {
+header nav ul a {
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
   color: rgb(94, 96, 122);
 }
-header ul a:hover {
-  border-bottom: 1px solid rgb(94, 96, 122);
+header nav ul a:hover {
+  color: #f15d51;
+}
+
+.header__hamburger-cross {
+  position: relative;
+}
+.header__hamburger-cross div:nth-child(1) {
+  position: absolute;
+  transform: rotate(45deg);
+  top: 40%;
+}
+.header__hamburger-cross div:nth-child(2) {
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 40%;
+}
+.header__hamburger-cross div:nth-child(3) {
+  display: none;
 }
 
 #mainGrid {
@@ -73,7 +100,7 @@ header ul a:hover {
 }
 #mainGrid .mainGrid__readMore div a {
   display: inline-block;
-  background-color: rgb(241, 93, 81);
+  background-color: #f15d51;
   color: rgb(255, 253, 250);
   font-size: 14px;
   font-weight: 700;
@@ -82,7 +109,7 @@ header ul a:hover {
   padding: 1.2rem 3.15rem;
 }
 #mainGrid .mainGrid__readMore div a:hover {
-  background-color: rgb(233, 72, 57);
+  background-color: rgb(0, 0, 26);
 }
 #mainGrid .mainGrid__news {
   grid-area: mainGrid__articles;
@@ -97,7 +124,6 @@ header ul a:hover {
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
-  -webkit-text-stroke: 1px rgb(0, 0, 0);
   min-width: 30.2rem;
   margin: 0 auto;
 }
@@ -111,6 +137,9 @@ header ul a:hover {
   font-weight: 800;
   line-height: 24px;
   margin-bottom: 0.8rem;
+}
+#mainGrid .mainGrid__news article h3:hover {
+  color: rgb(233, 170, 82);
 }
 #mainGrid .mainGrid__news article p {
   color: rgb(197, 198, 206);
@@ -154,6 +183,9 @@ header ul a:hover {
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
+}
+#topArticles article h3:hover {
+  color: #f15d51;
 }
 #topArticles article h4 {
   grid-area: topArticles__text;

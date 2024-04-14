@@ -1,5 +1,27 @@
-# css web 3.0 project exercise
+# Frontend Mentor - Age calculator app solution
 
-## Small html/css project for an exercise at BeCode Liege
+This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-[Live URL](https://junior-dev-track.github.io/14-css-web-3-0-project-Qheuss/)
+## Table of contents
+
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Built with](#built-with)
+- [Author](#author)
+
+## Overview
+
+### Screenshot
+
+![](images/screenshot.png)
+
+### Built with
+
+- HTML
+- SASS
+- JS
+
+## Author
+
+- Frontend Mentor - [@Qheuss](https://www.frontendmentor.io/profile/Qheuss)
+- LinkedIn - [Quentin Heusse](https://www.linkedin.com/in/quentin-heusse/)

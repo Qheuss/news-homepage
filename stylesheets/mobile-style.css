@@ -2,35 +2,62 @@
   .container {
     max-width: 34.3rem;
   }
+  .displayNone {
+    display: none;
+  }
+  .hamburgerBackgroundOn {
+    display: inline-block;
+    height: 100vh;
+    width: 50%;
+    right: 55%;
+    padding-left: auto;
+    position: absolute;
+    background-color: rgba(0, 0, 26, 0.5);
+    top: 0;
+  }
   header {
     margin: 3.2rem auto;
     align-items: center;
   }
-  header #header__dropdown {
-    display: inline-block;
+  header img {
+    max-width: 4.5rem;
   }
-  header nav {
-    position: relative;
+  header nav .header__hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 999;
+    gap: 0.4rem;
+    position: absolute;
+    width: 4rem;
+    height: 1.7rem;
+    right: 40%;
+  }
+  header nav .header__hamburger div {
+    height: 0.3rem;
+    width: 4rem;
+    background-color: rgb(0, 0, 26);
   }
   header nav ul {
-    display: none;
+    display: flex;
     position: absolute;
-    border-top: 1px solid rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-    left: -31.5rem;
-    text-align: end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    right: -30%;
+    top: -345%;
     margin-top: 2rem;
-    min-width: 0;
+    min-width: 25.6rem;
+    min-height: 100vh;
     background-color: rgb(255, 253, 250);
+    padding-bottom: 13rem;
   }
   header nav ul li {
-    padding: 1.5rem 1rem;
+    min-width: 20.3rem;
   }
   header nav ul li a {
-    color: rgba(0, 0, 0, 0.75);
-  }
-  header nav:hover ul {
-    display: flex;
+    color: rgb(0, 0, 26);
   }
   #mainGrid {
     display: flex;
