@@ -46,7 +46,7 @@ header {
   nav {
     position: relative;
     height: 1.7rem;
-    width: 4rem;
+    width: 43.1rem;
     .header__hamburger {
       display: none;
     }
@@ -87,7 +87,8 @@ header {
   display: grid;
   grid-template:
     'mainGrid__img mainGrid__img mainGrid__articles' 1fr
-    'mainGrid__h1 mainGrid__readMore mainGrid__articles' 1fr;
+    'mainGrid__h1 mainGrid__readMore mainGrid__articles' 1fr
+    'topArticles topArticles topArticles';
   gap: 3rem;
   max-height: 51.1rem;
 
@@ -179,48 +180,48 @@ header {
       border-top: 1px solid $gray;
     }
   }
-}
-
-#topArticles {
-  margin: 7rem 0;
-  display: flex;
-  gap: 3rem;
-  article {
-    max-height: 12.9rem;
-    display: grid;
-    grid-template:
-      'topArticles__img  topArticles__number' 1fr
-      'topArticles__img  topArticles__title' 1fr
-      'topArticles__img  topArticles__text' 1fr;
-    column-gap: 2.4rem;
-    img {
-      grid-area: topArticles__img;
-      max-width: 10rem;
-    }
-    p {
-      grid-area: topArticles__number;
-      color: $lighterGray;
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 32px;
-    }
-    h3 {
-      grid-area: topArticles__title;
-      color: $fakeBlack;
-      font-size: 18px;
-      font-weight: 800;
-      line-height: 24px;
-      &:hover {
-        color: $red;
+  #topArticles {
+    margin: 7rem 0;
+    display: flex;
+    gap: 3rem;
+    grid-area: topArticles;
+    article {
+      max-height: 12.9rem;
+      display: grid;
+      grid-template:
+        'topArticles__img  topArticles__number' 1fr
+        'topArticles__img  topArticles__title' 1fr
+        'topArticles__img  topArticles__text' 1fr;
+      column-gap: 2.4rem;
+      img {
+        grid-area: topArticles__img;
+        max-width: 10rem;
       }
-    }
-    h4 {
-      grid-area: topArticles__text;
-      color: $gray;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 26px;
-      max-width: 22.6rem;
+      p {
+        grid-area: topArticles__number;
+        color: $lighterGray;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+      }
+      h3 {
+        grid-area: topArticles__title;
+        color: $fakeBlack;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 24px;
+        &:hover {
+          color: $red;
+        }
+      }
+      h4 {
+        grid-area: topArticles__text;
+        color: $gray;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+        max-width: 22.6rem;
+      }
     }
   }
 }

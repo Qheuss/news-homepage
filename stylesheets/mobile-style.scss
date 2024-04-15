@@ -25,6 +25,7 @@
       max-width: 4.5rem;
     }
     nav {
+      width: 4rem;
       .header__hamburger {
         display: flex;
         flex-direction: column;
@@ -34,7 +35,6 @@
         position: absolute;
         width: 4rem;
         height: 1.7rem;
-        right: 40%;
         div {
           height: 0.3rem;
           width: 4rem;
@@ -89,7 +89,6 @@
       }
     }
   }
-
   #topArticles {
     flex-direction: column;
   }

@@ -22,6 +22,9 @@
   header img {
     max-width: 4.5rem;
   }
+  header nav {
+    width: 4rem;
+  }
   header nav .header__hamburger {
     display: flex;
     flex-direction: column;
@@ -31,7 +34,6 @@
     position: absolute;
     width: 4rem;
     height: 1.7rem;
-    right: 40%;
   }
   header nav .header__hamburger div {
     height: 0.3rem;

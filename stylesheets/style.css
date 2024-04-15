@@ -31,7 +31,7 @@ header {
 header nav {
   position: relative;
   height: 1.7rem;
-  width: 4rem;
+  width: 43.1rem;
 }
 header nav .header__hamburger {
   display: none;
@@ -70,7 +70,7 @@ header nav ul a:hover {
 
 #mainGrid {
   display: grid;
-  grid-template: "mainGrid__img mainGrid__img mainGrid__articles" 1fr "mainGrid__h1 mainGrid__readMore mainGrid__articles" 1fr;
+  grid-template: "mainGrid__img mainGrid__img mainGrid__articles" 1fr "mainGrid__h1 mainGrid__readMore mainGrid__articles" 1fr "topArticles topArticles topArticles";
   gap: 3rem;
   max-height: 51.1rem;
 }
@@ -153,41 +153,41 @@ header nav ul a:hover {
   border: none;
   border-top: 1px solid rgb(94, 96, 122);
 }
-
-#topArticles {
+#mainGrid #topArticles {
   margin: 7rem 0;
   display: flex;
   gap: 3rem;
+  grid-area: topArticles;
 }
-#topArticles article {
+#mainGrid #topArticles article {
   max-height: 12.9rem;
   display: grid;
   grid-template: "topArticles__img  topArticles__number" 1fr "topArticles__img  topArticles__title" 1fr "topArticles__img  topArticles__text" 1fr;
   -moz-column-gap: 2.4rem;
        column-gap: 2.4rem;
 }
-#topArticles article img {
+#mainGrid #topArticles article img {
   grid-area: topArticles__img;
   max-width: 10rem;
 }
-#topArticles article p {
+#mainGrid #topArticles article p {
   grid-area: topArticles__number;
   color: rgb(197, 198, 206);
   font-size: 32px;
   font-weight: 700;
   line-height: 32px;
 }
-#topArticles article h3 {
+#mainGrid #topArticles article h3 {
   grid-area: topArticles__title;
   color: rgb(0, 0, 26);
   font-size: 18px;
   font-weight: 800;
   line-height: 24px;
 }
-#topArticles article h3:hover {
+#mainGrid #topArticles article h3:hover {
   color: #f15d51;
 }
-#topArticles article h4 {
+#mainGrid #topArticles article h4 {
   grid-area: topArticles__text;
   color: rgb(94, 96, 122);
   font-size: 15px;

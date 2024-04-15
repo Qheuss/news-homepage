@@ -1,0 +1,18 @@
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    max-width: 73rem;
+  }
+  #mainGrid {
+    display: grid;
+    grid-template: "mainGrid__img mainGrid__img" "mainGrid__h1 mainGrid__readMore" "mainGrid__articles topArticles";
+    gap: 3rem;
+    max-height: none;
+  }
+  #mainGrid .mainGrid__news {
+    max-height: 44.7rem;
+    margin: 7rem 0;
+  }
+  #topArticles {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=tablet-style.css.map */
